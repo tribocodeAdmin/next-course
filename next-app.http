@@ -1,0 +1,39 @@
+@baseUrl = http://localhost:3000
+### GET
+GET {{baseUrl}}/api/users
+
+### GET{id}
+GET {{ baseUrl }} /api/users/1
+
+### POST
+POST {{ baseUrl }}/api/users
+Content-Type: application/json
+
+{
+  "name": "Francisco Quinto",
+  "email": "francisco.quinto@gmail.com"
+}
+
+### PUT{id}
+PUT {{ baseUrl }}/api/users/4
+Content-Type: application/json
+
+{
+  "name": "Francisco Q. Quinto",
+  "email": "francisco.quinto10773@gmail.com"
+}
+
+### DELETE{id}
+DELETE {{ baseUrl }}/api/users/2
+
+### GET - Product
+GET {{ baseUrl }}/api/products
+
+### POST
+POST {{ baseUrl }}/api/products
+Content-Type: application/json
+
+{
+  "name": "Milk",
+  "price": 2.5
+}
