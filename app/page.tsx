@@ -14,3 +14,5 @@ export default async function Home() {
       </main>
   );
 }
+
+// TODO: 0068_3_Creating_an_Email_Template
