@@ -37,3 +37,12 @@ Content-Type: application/json
   "name": "Milk",
   "price": 2.5
 }
+
+### Register User
+POST {{ baseUrl }}/api/register
+Content-Type: application/json
+
+{
+  "email": "manolo@manatlao.com",
+  "password": "1234567"
+}
