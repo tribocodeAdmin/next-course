@@ -5,7 +5,7 @@ import prisma from "@/prisma/client";
 
 export async function GET(request: NextRequest, { params }: { params: { id: string}}) {
     const user = await prisma.user.findUnique({
-        where: { id: parseInt(params.id) }
+        where: { id: params.id }
     })
 
     if (!user)
@@ -21,7 +21,7 @@ export async function PUT(request: NextRequest, { params }: { params: { id: stri
         return NextResponse.json(validation.error.errors, {status: 400});
 
     const user =  await prisma.user.findUnique({
-        where: { id: parseInt(params.id) }
+        where: { id: params.id }
     })
 
     const updatedUser = await  prisma.user.update({
@@ -40,7 +40,7 @@ export async function PUT(request: NextRequest, { params }: { params: { id: stri
 
 export async function DELETE(request: NextRequest, { params }: { params: { id: string}}) {
     const user = await prisma.user.findUnique({
-        where: { id: parseInt(params.id)}
+        where: { id: params.id}
     })
 
     if (!user)

@@ -2,12 +2,12 @@
 import Link from "next/link";
 import ProductCard from "@/app/components/ProductCard";
 import {getServerSession} from "next-auth";
-import {authOptions} from "@/app/api/auth/[...nextauth]/route";
+
 import Image from "next/image";
 import coffee from '@/public/images/espreso.jpg'
 import {Metadata} from "next";
 import HeavyComponent from "@/app/components/HeavyComponent";
-import {useState} from "react";
+import {authOptions} from "@/app/api/auth/authOptions";
 
 export default async function Home() {
     const session = await getServerSession(authOptions)

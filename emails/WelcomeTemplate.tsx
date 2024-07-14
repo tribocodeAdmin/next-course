@@ -1,7 +1,7 @@
 import React, {CSSProperties} from 'react';
 import { Html, Body, Container, Tailwind, Text, Link, Preview } from '@react-email/components'
 
-const WelcomTemplate = ({ name } : { name: string} ) => {
+const WelcomeTemplate = ({ name } : { name: string} ) => {
     return (
         <Html>
             <Preview>Welcome aboard!</Preview>
@@ -25,4 +25,4 @@ const body: CSSProperties = {
 const heading: CSSProperties = {
     fontWeight: '32px',
 }
-export default WelcomTemplate;
+export default WelcomeTemplate;
