@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
-import { Inter, Roboto } from "next/font/google";
 import localFont from 'next/font/local'
 import "./globals.css";
 import NavBar from "@/app/NavBar";
 import AuthProvider from "@/app/auth/Provider";
 import GoogleAnalyticsScript from "@/GoogleAnalyticsScript";
 
-const inter = Inter({ subsets: ["latin"] });
-const roboto = Roboto({
-  subsets: ['latin'],
-  weight: ['100', '500']
-
-})
+// const inter = Inter({ subsets: ["latin"] });
+// const roboto = Roboto({
+//   subsets: ['latin'],
+//   weight: ['100', '500']
+//
+// })
 
 const poppins  =localFont({
   src: '../public/fonts/poppins-regular-webfont.woff2',

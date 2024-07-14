@@ -4,9 +4,6 @@ import ProductCard from "@/app/components/ProductCard";
 import {getServerSession} from "next-auth";
 
 import Image from "next/image";
-import coffee from '@/public/images/espreso.jpg'
-import {Metadata} from "next";
-import HeavyComponent from "@/app/components/HeavyComponent";
 import {authOptions} from "@/app/api/auth/authOptions";
 
 export default async function Home() {
@@ -17,7 +14,7 @@ export default async function Home() {
       <main className="relative h-screen">
         <h1>Hello {session && <span>{session.user!.name}</span>}</h1>
 
-          <Link href="/users">Users</Link>
+          <Link href="/users/">Users</Link>
           <ProductCard />
 
           {/*Optimization*/}

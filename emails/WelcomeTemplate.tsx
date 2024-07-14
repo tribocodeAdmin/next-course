@@ -1,4 +1,4 @@
-import React, {CSSProperties} from 'react';
+import React from 'react';
 import { Html, Body, Container, Tailwind, Text, Link, Preview } from '@react-email/components'
 
 const WelcomeTemplate = ({ name } : { name: string} ) => {
@@ -17,12 +17,12 @@ const WelcomeTemplate = ({ name } : { name: string} ) => {
     );
 };
 
-const body: CSSProperties = {
-    background: '#fff'
-
-}
-
-const heading: CSSProperties = {
-    fontWeight: '32px',
-}
+// const body: CSSProperties = {
+//     background: '#fff'
+//
+// }
+//
+// const heading: CSSProperties = {
+//     fontWeight: '32px',
+// }
 export default WelcomeTemplate;

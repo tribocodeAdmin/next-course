@@ -1,5 +1,4 @@
 import {NextRequest, NextResponse} from "next/server";
-import {number} from "prop-types";
 import schema from "@/app/api/users/schema";
 import prisma from "@/prisma/client";
 
